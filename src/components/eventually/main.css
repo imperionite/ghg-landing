@@ -812,10 +812,12 @@ button,
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
   margin-bottom: 30px;
   min-height: 24px;
   transition: opacity 0.5s ease-in-out;
+  color: #5ef705;
 }
 
 .cta-button {

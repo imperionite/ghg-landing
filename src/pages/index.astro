@@ -1,0 +1,53 @@
+---
+import Head from "../components/eventually/Head.astro";
+import Header from "../components/eventually/Header.astro";
+import Footer from "../components/eventually/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="is-preload">
+    <Header />
+    <main style="margin-bottom: 4rem;">
+      <div>
+        <button
+          onclick="window.location.href='https://ghgdataexplorerph.streamlit.app'"
+          >Welcome and explore</button
+        >
+      </div>
+      <div style="margin-top: 30px;">
+        <button
+          style="background-color: rgba(248, 245, 240, 0.938); color: rgb(45, 42, 42) !important;"
+          onclick="window.location.href='https://ghgdataexplorerph.streamlit.app/Visual_Experiment'"
+          >Unlock insights and take action!</button
+        >
+        <button
+          style="background-color: rgba(248, 245, 240, 0.938); color: rgb(45, 42, 42) !important;"
+          onclick="window.location.href='https://ghgdataexplorerph.streamlit.app/Issue'"
+          >Know the Issue</button
+        >
+      </div>
+    </main>
+    <footer id="footer">
+      <Footer />
+    </footer>
+    <script src="../scripts/eventually/main.js"></script>
+    <script src="../scripts/eventually/taglines.js"></script>
+    <script>
+      addEventListener("load", () => {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(() => console.log("Service Worker Registered"))
+            .catch((err) =>
+              console.error("Service Worker Registration Failed", err)
+            );
+        }
+      });
+    </script>
+  </body>
+</html>

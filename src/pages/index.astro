@@ -14,30 +14,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <Header />
     <main style="margin-bottom: 3rem;">
       <div>
-        <button
-		  style="font-size: larger;"
-          onclick="window.location.href='https://ghgdataexplorerph.streamlit.app'"
-          >Welcome and Explore</button
+        <a
+          href="https://ghg-scoutph.vercel.app/"
+          class="button"
+          style="font-size: larger;"
         >
-      </div>
-      <div style="margin-top: 30px;">
-        <button
-          style="background-color: rgba(248, 168, 39, 0.938); font-size: small;"
-          onclick="window.location.href='https://ghgdataexplorerph.streamlit.app/Visual_Experiment'"
-          >Unlock Insights</button
-        >
-        <button
-          style="background-color: rgba(248, 168, 39, 0.938); font-size: small;"
-          onclick="window.location.href='https://ghgdataexplorerph.streamlit.app/Issue'"
-          >Know the Issue</button
-        >
+          Milestone 2 Project
+        </a>
       </div>
     </main>
     <footer id="footer">
       <Footer />
     </footer>
-    <script src="../scripts/eventually/main.js"></script>
-    <script src="../scripts/eventually/taglines.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/taglines.js"></script>
     <script>
       addEventListener("load", () => {
         if ("serviceWorker" in navigator) {

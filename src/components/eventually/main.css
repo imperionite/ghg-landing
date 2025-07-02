@@ -757,7 +757,7 @@ button,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: #199e83; }
+    background-color: #c1e9e1; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,

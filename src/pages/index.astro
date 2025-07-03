@@ -28,17 +28,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     </footer>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/taglines.js"></script>
-    <script>
-      addEventListener("load", () => {
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker
-            .register("/sw.js")
-            .then(() => console.log("Service Worker Registered"))
-            .catch((err) =>
-              console.error("Service Worker Registration Failed", err)
-            );
-        }
-      });
-    </script>
   </body>
 </html>

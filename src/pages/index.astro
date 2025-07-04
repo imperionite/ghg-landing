@@ -11,14 +11,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <head>
     <Head title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="is-preload">
+  <body class="is-preload layout">
     <Header />
-    <main style="margin-bottom: 3rem;">
+    <main class="main-content">
       <LinksTable />
+      <footer id="footer">
+        <Footer />
+      </footer>
     </main>
-    <footer id="footer">
-      <Footer />
-    </footer>
+
     <script src="../scripts/main.js"></script>
     <script src="../scripts/taglines.js"></script>
   </body>

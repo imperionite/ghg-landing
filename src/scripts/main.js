@@ -105,17 +105,10 @@
     var settings = {
       // Images (in the format of 'url': 'alignment').
       images: {
-        "https://imgur.com/8reTIuI.jpg": "center",
-        "https://imgur.com/60aazrO.jpg": "center",
-        "https://imgur.com/X9zD3pP.jpg": "center",
-        "https://imgur.com/8eTzu39.jpg": "center",
-        "https://imgur.com/J3WpLrO.jpg": "center",
-        "https://imgur.com/d45XXFu.jpg": "center",
-        "https://imgur.com/pm9vCYx.jpg": "center",
-        "https://imgur.com/Dc7rrtw.jpg": "center",
-        "https://imgur.com/HQiLuOi.jpg": "center",
-        "https://imgur.com/Xo0pJD7.jpg": "center",
-        "https://imgur.com/sgAM6vq.jpg": "center",
+        "/eventually/img/earth.jpg": "center",
+        "/eventually/img/factory.jpg": "center",
+        "/eventually/img/nuke.jpg": "center",
+        "/eventually/img/afternoon.jpg": "center",
       },
 
       // Delay.
